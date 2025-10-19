@@ -1,0 +1,23 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #ffe4c4;
+    color: #3b2d1f;
+}
+
+.letter {
+    background: #FAF0E6;
+    max-width: 600px;
+    margin: 80px auto;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    text-align: left;
+}
+
+.letter #title {
+    font-family: Dancing Script, cursive;
+}
+
+.letter #footer {
+    text-align: right;
+}

@@ -1,0 +1,98 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f08aeb;
+}
+
+.login {
+    background-color: #ffffff;
+    padding: 20px 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 100px auto;
+    text-align: center;
+}
+
+.login img {
+    margin-bottom: -20px;
+}
+
+.login h1 {
+    font-size: 40px;
+    font-style: bold;
+}
+
+.login #name, .login #pass {
+    margin: 20px 0;
+    text-align: left;
+}
+
+.login #name, .login #pass {
+    width: 100%;
+    padding: 10px;
+    margin: 10px -10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login label {
+    font-size: 15px;
+    font-style: italic;
+}
+
+.login button {
+    background-color: #f08aeb;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    font-size: 16px;
+    margin-top: 10px;
+    box-shadow: 0 9px #999;
+}
+
+.login button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.login button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.login button:hover span {
+    padding-right: 25px;
+}
+
+.login button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.login button:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(5px);
+}
+
+.login p {
+    font-size: 12px;
+    font-style: italic;
+    margin-top: 30px;
+}
+
+.login #output {
+    margin-top: 30px;
+    font-size: 14px;
+    color: red;
+}
