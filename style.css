@@ -2,7 +2,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f08aeb;
     margin: 0;
-    padding: 20px 0;
+    padding: 10px 0;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -15,8 +15,8 @@ body {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 90%;
-    max-width: 600px;
+    width: 85%;
+    max-width: 400px;
     max-height: 90vh;
     overflow-y: auto;
     margin: 0 auto;
@@ -108,9 +108,10 @@ body {
 @media (max-width: 480px) {
     .login {
         padding: 15px;
+        width: 90%;
     }
     .login h1 {
-        font-size: 1.5em;
+        font-size: 1.8em;
     }
     .login label, .login p {
         font-size: 14px;
