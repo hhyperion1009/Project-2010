@@ -2,11 +2,11 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f08aeb;
     margin: 0;
-    padding: 10px 0;
+    padding: 10% 0;
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    min-height: 100vh;
+    min-height: 80vh;
     box-sizing: border-box;
 }
 
