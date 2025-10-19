@@ -1,16 +1,17 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #FFE4E1, #FFF0F5);
+    background: #FFE4E1;
     color: #3b2d1f;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    padding: 20px;
+    padding: 40px 0;
 }
 
 .letter {
-    width: 340px;
+    width: 80%;
+    max-width: 350px;
     background: #ffffffb3;
     border-radius: 15px;
     padding: 25px;
