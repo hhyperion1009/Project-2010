@@ -1,5 +1,9 @@
 const userName = localStorage.getItem("loggedInUser");
 const msg = localStorage.getItem("userMsg");
+const music = localStorage.getItem("userMusic") || "default.mp3";
+
+const audio = new Audio(music);
+audio.loop = true;
 
 if (!userName || !msg) {
   document.body.innerHTML = "<p>Không có thông tin đăng nhập! Mời bạn quay lại trang chính!</p>";
@@ -17,4 +21,15 @@ if (!userName || !msg) {
 
   localStorage.removeItem("loggedInUser");
   localStorage.removeItem("userMsg");
+
+  const letter = document.querySelector(".letter");
+  const openBtn = document.getElementById("openBtn");
+
+  letter.classList.remove("show");
+
+  openBtn.addEventListener("click", () => {
+    letter.classList.add("show"); // blur tan ra nè
+    audio.play().catch(err => console.log("Không phát được nhạc:", err));
+    openBtn.style.display = "none"; // ẩn nút mở thư
+  });
 }

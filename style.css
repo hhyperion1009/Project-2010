@@ -2,7 +2,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f08aeb;
     margin: 0;
-    padding: 80px 0;
+    padding: 40px 0;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -116,5 +116,4 @@ body {
     .login label, .login p {
         font-size: 14px;
     }
-
 }

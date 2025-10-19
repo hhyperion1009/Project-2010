@@ -1,23 +1,61 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: #ffe4c4;
+    background: linear-gradient(135deg, #FFE4E1, #FFF0F5);
     color: #3b2d1f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
 }
 
 .letter {
-    background: #FAF0E6;
-    max-width: 600px;
-    margin: 80px auto;
-    padding: 40px;
-    border-radius: 16px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.2);
-    text-align: left;
+    width: 340px;
+    background: #ffffffb3;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    backdrop-filter: blur(15px);
+    filter: blur(4px);
+    opacity: 0.5;
+    transform: scale(0.98);
+    transition: 
+        filter 1.5s ease, 
+        opacity 1.5s ease, 
+        transform 1.5s ease;
 }
 
-.letter #title {
-    font-family: Dancing Script, cursive;
+.letter.show {
+    filter: blur(0);
+    opacity: 1;
+    transform: scale(1);
+}
+
+#openBtn {
+  position: absolute;
+  z-index: 10;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 10px;
+  background: #FF69B4;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+#openBtn {
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#openBtn:hover {
+  background: #FF1493;
+  transform: translate(-50%, -50%) scale(1.05);
 }
 
 .letter #footer {
+    padding-top: 10px;
     text-align: right;
 }
